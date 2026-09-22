@@ -48,10 +48,10 @@ def structure_light_process(scene_config: str):
 
 def batch():
     # single-item test:
-    # single_test_file_path = r"D:\game_projects\rust\structure_render_sim\test_data\scene\scene_1.json"
+    # single_test_file_path = r"...\scene_1.json"
     # structure_light_process(single_test_file_path)
 
-    scenes_dir = r"D:\game_projects\rust\structure_render_sim\test_data\scene"
+    scenes_dir = r"scene folder path"
     for index, item in enumerate( os.listdir(scenes_dir)):
         scene_path = os.path.join(scenes_dir, item)
         structure_light_process(scene_path)
