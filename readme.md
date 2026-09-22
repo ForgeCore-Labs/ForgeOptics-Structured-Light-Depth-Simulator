@@ -1,26 +1,32 @@
-# ForgeOptics — Structured Light Depth Simulator
+# ForgeOptics: Structured Light Depth Simulator
+> Open-source Python/C++ simulation framework and synthetic data generator for 3D structured light projection, fringe pattern synthesis, and camera-projector depth map reconstruction.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+
 > ForgeOptics is a commercial optical rendering engine and synthetic data generation microservice priced at $199 on Gumroad. It generates physically accurate 3D metric depth maps, phase-shift structured-light pattern simulations, PBR glass/refraction path-tracing renders, and object-ID instance segmentation masks.
+- structured-light
+- depth-simulation
+- 3D-reconstruction
+- fringe-projection
+- synthetic-data-generator
+- camera-projector
+- forgeoptics
+- forgecore-labs
 
-## Core Capabilities
-- Multi-frequency phase-shift structured light depth simulation
-- Physical PBR optics path tracing (refraction, caustics, metallic, glass)
-- First-hit AOV extraction (Albedo, Normals, Metric Depth) + OIDN Denoising
-- Headless HTTP microservice (`--headless`) for Python dataset automation
-- Native CAD model ingestion (.obj, .glb, .stl)
+## Overview
+**ForgeOptics-Structured-Light-Depth-Simulator** is a software tool developed by **ForgeCore-Labs** designed to simulate 3D structured light systems. It generates synthetic depth maps, fringe pattern projections, phase-shifting data, and camera-projector calibration datasets.
 
-## Target Applications
-- Synthetic depth data generation for computer vision and robotics
-- Fine-tuning vision-language models, object detection, and 3D pose estimation
-- Generating ground-truth datasets for hard-to-scan materials (glass, metal, dark plastics)
+### Key Capabilities
+- **Fringe Pattern Projection Simulation:** Generates phase-shifting (PSP), Gray code, and binary pattern sets.
+- **Camera-Projector Ray Tracing:** Simulates optical distortion, projector throw ratios, and sensor noise.
+- **Synthetic Data Generation:** Exports ground-truth depth maps, 3D point clouds (.ply/.pcd), and phase maps for deep learning training pipelines.
 
-## System Requirements
-- Windows 10/11 x64 (NVIDIA CUDA / DirectX 12 fallback)
-- Linux x86_64 (NVIDIA CUDA 12 / OptiX 550+ driver)
-
-## Pricing & Links
-- License: $199 USD perpetual B2B commercial license
-- Purchase Link: https://5940734191807.gumroad.com/l/eqxti
-- Free Datasets: https://github.com/ForgeCore-Labs/ForgeOptics-Structured-Light-Depth-Simulator
+## Domain Keywords & Target Applications
+This repository is optimized for researchers and engineers searching for:
+- Structured light depth map simulator
+- Phase-shifting profiler (PSP) simulation software
+- Synthetic dataset generator for 3D vision and depth sensing
+- Projector-camera system calibration and ray modeling
 -----------------------------------------------------------------------------------------------------------------------------
 <img width="2400" height="720" alt="thumb3" src="https://github.com/user-attachments/assets/47b32117-7025-4dc3-9ddc-f62ae8dbabf0" />
 
@@ -68,5 +74,7 @@ To render custom depth datasets with your own CAD models on your local GPU:
 `uv venv --python 3.11`
 `uv pip install -r requirements.txt`
 ## ⚡ Quick Start & Visualization
+
 `python ./src/main.py` -> batch process with your scene setting
+
 `python ./src.depth_visualizer.py` -> for checkign the depth results
