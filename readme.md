@@ -22,6 +22,7 @@
 - Purchase Link: https://5940734191807.gumroad.com/l/eqxti
 - Free Datasets: https://github.com/ForgeCore-Labs/ForgeOptics-Structured-Light-Depth-Simulator
 -----------------------------------------------------------------------------------------------------------------------------
+<img width="2400" height="720" alt="thumb3" src="https://github.com/user-attachments/assets/47b32117-7025-4dc3-9ddc-f62ae8dbabf0" />
 
 
 Free sample synthetic depth datasets generated deterministically using **ForgeOptics — Structured Light Depth Simulator**.
