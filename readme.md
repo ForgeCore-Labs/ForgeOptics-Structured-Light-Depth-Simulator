@@ -31,10 +31,10 @@ This repository is optimized for researchers and engineers searching for:
 <img width="2400" height="720" alt="thumb3" src="https://github.com/user-attachments/assets/47b32117-7025-4dc3-9ddc-f62ae8dbabf0" />
 
 
-Free sample synthetic depth datasets generated deterministically using **ForgeOptics — Structured Light Depth Simulator**.
 
 ## What's Included
-Three sample synthetic depth datasets, each sample scene folder contains the following files:
+Free sample synthetic depth datasets generated deterministically using **ForgeOptics — Structured Light Depth Simulator**.
+each sample scene folder contains the following files:
 
 1. depth_z.exr — Raw 32-bit float metric depth map. Using camera intrinsics (calib), you can reconstruct the true 3D point cloud.
 
