@@ -27,6 +27,14 @@ This repository is optimized for researchers and engineers searching for:
 - Phase-shifting profiler (PSP) simulation software
 - Synthetic dataset generator for 3D vision and depth sensing
 - Projector-camera system calibration and ray modeling
+
+### ⚠️ How ForgeOptics Works (Not Just a Z-Buffer Exporter)
+
+Unlike standard graphics engines that export direct geometric z-buffers, **ForgeOptics simulates the entire physical Phase-Shifting Profilometry (PSP) pipeline**:
+1. **Project Patterns:** Projects multi-frequency sinusoidal fringe patterns onto target CAD models.
+2. **Path-Trace Light Interactions:** Simulates complex light deformation, PBR reflections, and caustics on the fringe patterns.
+3. **Capture Deformed Fringes:** Renders high-fidelity camera sensor views of the illuminated scene.
+4. **Phase Unwrapping & Metric Depth:** Runs phase demodulation on the synthetic fringe views to calculate true 32-bit float metric depth (`depth_z.exr`).
 -----------------------------------------------------------------------------------------------------------------------------
 <img width="2400" height="720" alt="thumb3" src="https://github.com/user-attachments/assets/47b32117-7025-4dc3-9ddc-f62ae8dbabf0" />
 
