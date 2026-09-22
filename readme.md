@@ -39,7 +39,6 @@ Unlike standard graphics engines that export direct geometric z-buffers, **Forge
 <img width="2400" height="720" alt="thumb3" src="https://github.com/user-attachments/assets/47b32117-7025-4dc3-9ddc-f62ae8dbabf0" />
 
 
-
 ## What's Included
 Free sample synthetic depth datasets generated deterministically using **ForgeOptics — Structured Light Depth Simulator**.
 each sample scene folder contains the following files:
@@ -86,3 +85,5 @@ To render custom depth datasets with your own CAD models on your local GPU:
 `python ./src/main.py` -> batch process with your scene setting
 
 `python ./src.depth_visualizer.py` -> for checkign the depth results
+## Acknowledgments
+This project builds upon [LuisaRender](https://github.com/LuisaRender/LuisaRender), used under the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause). Copyright (c) LuisaGroup.
